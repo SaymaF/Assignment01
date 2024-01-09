@@ -174,8 +174,6 @@ body {
     background-position: bottom;
     background-size: contain;
   }
-  .h-img-1 {
-  }
   .h-img-2 {
     position: absolute;
     bottom: 280px;
@@ -193,8 +191,6 @@ body {
   .portfolio {
     width: 1320px;
     margin: auto;
-  }
-  .portfolio-headings {
   }
   .portfolio-h1 {
     color: #f00;
@@ -222,14 +218,17 @@ body {
   }
   
   .portfolio-img {
-    display: grid;
-    grid-template-columns: repeat(3, 424px);
-    grid-gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 5px; */
     margin-top: 48px;
     text-align: center;
   }
   .portfolio-img img {
-    padding: 8px;
+    padding: 4px;
+  }
+  .portfolio-img img:hover{
+    border: 5px solid rgb(217, 125, 188);
   }
   
   /* portfolio end */
